@@ -4,11 +4,16 @@ import json
 
 app = Flask(__name__)
 
+
+def get_success_object() -> dict[str, str]:
+    return {"status": "success"}
+
+
 @app.route('/get', methods=['GET'])
 def get_data():
     data = "message": "Hello, World!"
     response = [data]
-    response = response.append({"status": "success"})
+    response = response.append(get_success_object())
     # Use flask's jsonify module to convert data to a JSON response
     return jsonify(response)
 

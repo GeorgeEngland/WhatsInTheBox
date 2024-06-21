@@ -22,6 +22,6 @@ Send a curl request to the /get endpoint on localhost
 ## Success
 A succesful fix should get the json data when calling the curl command
 
-`{"message": "Hello, World!"}`
+`[{"message":"Hello, World!"},{"status":"success"}]`
 
 Create a branch, commit your solution and push it
