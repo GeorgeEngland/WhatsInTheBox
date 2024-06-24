@@ -19,6 +19,8 @@ We need someone to come in and fix it!
 ### Evaluate
 Send a curl request to the /get endpoint on localhost
 
+`curl http://localhost:5678/get`
+
 ## Success
 A succesful fix should get the json data when calling the curl command
 
